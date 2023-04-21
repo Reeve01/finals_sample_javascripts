@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Slot Machine</title>
+    <script src="slot-machine.js"></script>
+  </head>
+  <body>
+    <h1>Slot Machine</h1>
+    <p>Coins: <span id="coins">20</span></p>
+    <p>Bet: <input type="number" id="bet" min="1" max="10" value="1"></p>
+    <button onclick="spin()">Spin</button>
+    <hr>
+    <div id="slots">
+      <div class="slot" id="slot1"></div>
+      <div class="slot" id="slot2"></div>
+      <div class="slot" id="slot3"></div>
+    </div>
+  </body>
+</html>

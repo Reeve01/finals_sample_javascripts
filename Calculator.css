@@ -1,0 +1,26 @@
+let display = document.getElementById('display');
+let input = '';
+
+function addToDisplay(val) {
+  input += val;
+  display.value = input;
+}
+
+function clearDisplay() {
+  input = '';
+  display.value = '';
+}
+
+function deleteChar() {
+  input = input.slice(0, -1);
+  display.value = input;
+}
+
+function calculate() {
+  try {
+    input = eval(input).toString();
+    display.value = input;
+  } catch (e) {
+    display.value = 'Error';
+  }
+}
